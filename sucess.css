@@ -1,0 +1,41 @@
+*{
+    text-decoration: none;
+}
+div{
+    width: 30%;
+    height: 180px;
+    margin: 3% 32%;
+    box-shadow: 0 0 10px yellowgreen;
+    background: green;
+    padding: 3%;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+div h1, span{
+    color: white;
+    font-size: 24px;
+}
+div button{
+    display: block;
+    margin-top: 40px;
+    margin-left: 135px;
+    position: relative;
+    border: 1px solid green;
+    cursor: pointer;
+    background: white;
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    height: 30px;
+    bor
+}
+div button a{
+    text-decoration: none;
+}
+
+
+.icon{
+    color: white;
+}

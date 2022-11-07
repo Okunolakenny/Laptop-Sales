@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./proform.css">
+</head>
+<body>
+    <section id="form">
+        <form action="" method="post">
+            <h1>Fill the form below</h1>
+            <div class="one"><span><i class="fas fa-user"></i></span> <input type="text" name="fname" id="Firstname"
+                    placeholder="Firstname" required>
+            </div>
+            <div class="one"><span><i class="fas fa-user"></i></span> <input type="text" name="lname" id="Lname"
+                    placeholder="Lastname" required></div>
+            <div class="one"><span><i class="fas fa-envelope"></i></span> </i><input type="email" name="email"
+                    id="email" placeholder="Email" required></div>
+            <div class="one"><span><i class="fas fa-phone-volume"></i></span> </i><input type="tel" name="tel" id="tel"
+                    placeholder="Phone no." required></div>
+            <label for="quantity">Product
+                Quantity</label>
+            <div class="two">
+                <button type="button" class="minus" id="minus"><i class="fas fa-minus"></i></button><input type="tel" value="0"
+                    name="quantity" id="quantity"><button type="button" class="plus" id="plus"><i class="fas fa-plus"></i></button>
+            </div>
+            <input type="submit" value="Buy product" id="buy">
+
+
+        </form>
+    </section>
+    <script>
+        var plus = document.getElementById('plus');
+        var minus = document.getElementById('minus');
+        var quantity = document.getElementById('quantity');
+        plus.onclick = function () {
+            quantity.value++
+            minus.disabled = false
+        }
+        minus.onclick = function () {
+            if (quantity.value <= 1) {
+                minus.disabled = true;
+            }
+            quantity.value--
+        }
+
+
+    </script>
+    <script src="./pro.js"></script>
+    <script src="./all.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,286 @@
+* {
+
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.btn {
+    background: blue;
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    font-size: 16px;
+    color: white;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    /* background:yellow;    */
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    align-items: center;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 10px blue;
+
+}
+
+header .container {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+header .container a{
+    color: white;
+    font-weight: bolder;
+}
+
+header .container img {
+    width: 70px;
+    height: 50px;
+    border: 2px solid blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+header .container h1 {
+    background-image: linear-gradient(to right, blue, yellow, blue);
+    width: fit-content;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* text-decoration: underline wavy hotpink; */
+}
+
+#section {
+    margin-top: 80px;
+    position: relative;
+    display: block;
+    align-items: center;
+    align-items: center;
+    height: 550px;
+    background: lightblue;
+}
+
+#section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+    height: 100%;
+}
+
+
+
+
+#section .container>div {
+    position: relative;
+    width: 45%;
+    height: 70%;
+
+}
+
+#section .container div:first-child {
+    text-align: center;
+}
+
+#section .container div:first-child h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    /* writing-mode: vertical-rl; */
+}
+
+#section .container div:first-child h2 {
+    line-height: 1.5em;
+    text-align: justify;
+
+}
+
+#section .container div:last-child {
+    align-items: center;
+    background: white;
+    /* height: 100%; */
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+#section .container div:last-child img {
+    height: 320px;
+    width: 100%;
+}
+
+
+#patronize {
+    margin: auto;
+    background: lavender;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    position: relative;
+    width: 100%;
+
+
+}
+
+#patronize .container {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+    width: 95%;
+
+
+}
+
+#patronize h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+#patronize .container div {
+
+    width: 350px;
+    height: 330px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px yellow;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+
+}
+
+#patronize .container div h3 {
+    position: absolute;
+    writing-mode: vertical-rl !important;
+    top: 30%;
+    background-image: linear-gradient(to bottom, blue, yellow, blue);
+    width: fit-content;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+
+
+}
+
+
+#patronize .container div img {
+    width: 80%;
+    height: 200px;
+
+}
+
+#patronize .container div button {
+
+    background: blue;
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    font-size: 16px;
+    color: white;
+    transition: 2s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#patronize .container div p {
+    line-height: 1.5em;
+
+}
+
+
+form {
+    width: 40%;
+    position: fixed;
+    margin: auto;
+    top: 13.5%;
+    left: 27%;
+    background: white;
+    box-shadow: 5px 5px blue;
+    border: 5px solid yellow;
+    height: 510px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    transform: scale(0);
+}
+
+form div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form div p,
+span {
+    /* font-size: 18px; */
+    font-weight: bolder;
+}
+
+form button {
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+form .close {
+    float: right;
+    margin-right: 0;
+    background-color: red;
+    cursor: pointer;
+    top: 0;
+    border-radius: 50%;
+    padding: 0 5px;
+    color: white;
+    position: relative;
+}
+
+form img {
+    position: relative;
+    width: 70%;
+    height: 250px;
+    margin: 2% 15%;
+}
+form .btn a{
+    color: white;
+    font-weight: bold;
+}

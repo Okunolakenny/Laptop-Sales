@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+/* form {
+    background: white;
+    width: 25%;
+    box-shadow: 5px 5px blue;
+    display: block;
+    margin: 10% 38%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid blue
+
+}
+
+form input {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 230px;
+    border: 1px solid grey;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin-left: 20px;
+    outline: none;
+
+
+
+}
+
+form input[type="submit"] {
+    border: 1px solid;
+    background: blue;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 80px;
+}
+
+.one {
+    display: flex;
+    margin-top: 23px;
+    justify-content: space-around;
+    gap: 0;
+}
+
+.cont {
+    margin-left: 33%;
+}
+
+span {
+    margin-top: 13px;
+    margin-left: 10px;
+    color: blue;
+    font-size: 25px;
+} */
+* {
+    /* overflow: hidden; */
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kurale', serif;
+
+
+}
+
+body {
+    background: lightblue;
+    width: 100%;
+
+}
+
+.cont {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background: orange;
+    display: flex;
+    /* flex-wrap: wrap; */
+    min-height: 500px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    /* padding: 20px; */
+
+}
+
+.cont>div {
+    width: 45%;
+    padding: 0 50px;
+    position: relative;
+    height: 100%;
+    /* cursor: pointer; */
+
+}
+
+.cont h1 {
+    text-align: center;
+}
+
+.cont>div:first-child {
+
+    margin-top: 10px;
+}
+
+.cont>div:first-child h1 {
+    color: white;
+
+}
+
+.cont>div:first-child .button {
+    width: 90%;
+    height: 65px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    /* margin: auto; */
+
+
+}
+
+.cont>div:first-child .button::after {
+    content: '';
+    height: 100%;
+    width: 70px;
+    left: 0;
+    background: black;
+    position: absolute;
+    opacity: 20%;
+}
+
+.cont>div:first-child .button:first-of-type {
+    color: white;
+    background: rgba(13, 13, 183, 0.735);
+}
+
+.cont>div:first-child .button:nth-of-type(2) {
+    color: white;
+    background: rgb(1, 202, 192);
+}
+
+.cont>div:first-child .button:nth-of-type(3) {
+    color: white;
+    background: orangered;
+}
+
+.cont>div:first-child .button:last-of-type {
+    color: white;
+    background: rgb(13, 112, 108);
+}
+
+/* .cont>div:first-child .button:first-of-type .icon{
+background: black;
+} */
+
+
+
+
+.cont div:last-child {
+    position: relative;
+    padding-top: 15px;
+    height: 80vh;
+    background-color: white;
+}
+.cont>div:last-child >form div {
+    background: white;
+
+    display: flex;
+    /* background: yellow; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 4rem; */
+    height: 55px;
+    box-shadow: 0 0 5px black;
+    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+.cont>div:last-child form input {
+    margin-top: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    outline: none;
+    height: 50px;
+}
+.cont>div:last-child form input[type="submit"] {
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+margin-left: 10%;
+    cursor: pointer;
+    background: greenyellow;
+}
+/* .eye{
+    cursor: pointer;
+    position: absolute;
+    right: 27px;
+} */
+span{
+    cursor: pointer;
+    position: ;
+    right: 10%;
+    z-index: 1;
+}
+#close{
+    display: none;
+    /* font-size: 50px; */
+}
+@media(max-width:1200px){
+    .cont{
+        flex-direction: column;
+    }
+    .cont div{
+        margin: auto;
+        width: 65%;
+    }
+.cont div:last-child {
+    width: 100%;
+}
+.cont>div:last-child >form div {
+width: 63%;
+margin: auto;
+margin-left:10%;
+margin-bottom:30px;
+
+padding: 0;
+}
+.cont>div:last-child form input[type="submit"] {
+width: 40%;
+margin-left: 20%;
+
+
+}
+.cont>div:last-child h1 {
+    margin-left: -18%;
+}
